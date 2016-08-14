@@ -1,0 +1,17 @@
+
+public class VendingMachine {
+	int price;
+	int balance;
+	int total;
+	
+	void showBalance()
+	{
+		
+		
+	}
+	public static void main(String[] args) {
+		
+
+	}
+
+}

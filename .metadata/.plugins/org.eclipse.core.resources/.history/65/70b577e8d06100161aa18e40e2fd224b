@@ -1,0 +1,23 @@
+package cdtest;
+
+public class CD extends Item{
+
+	private String artist;
+	private int numofTracks;
+	
+	public CD(String title, String artist, int numofTracks, int playingTime,
+			String comment) {
+//		调用item的构造器
+		super(title, playingTime, comment, false);
+		this.artist = artist;
+		this.numofTracks = numofTracks;
+		this.comment = comment;
+	}
+
+	public void print() {
+		System.out.println(artist + " ");
+		super.print();
+		System.out.println('\n');
+		
+	}
+}

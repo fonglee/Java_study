@@ -1,0 +1,30 @@
+package notebook;
+
+public class Notebook {
+	public void add(String s) {
+		
+	}
+	
+	public int getSize() {
+		return 0;
+	}
+	
+	public String getNode(int index) {
+		return "";
+	}
+	
+	public boolean removeNode(int index) {
+		
+	}
+	
+	public String[] list() {
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

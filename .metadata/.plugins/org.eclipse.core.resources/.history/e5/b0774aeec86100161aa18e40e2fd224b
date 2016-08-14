@@ -1,0 +1,52 @@
+package cdtest;
+
+import java.util.ArrayList;
+
+import cdtest.CD;
+
+public class Database {
+//	private ArrayList<CD> listCD = new ArrayList<CD>();
+//	private ArrayList<DVD> listDVD = new ArrayList<DVD>();
+//	
+	private ArrayList<Item> listItem = new ArrayList<Item>();
+	
+	
+//	public void add(CD cd) {
+//		listCD.add(cd);
+//	}
+//	
+//	public void add(DVD dvd) {
+//		listDVD.add(dvd);
+//	}
+	
+	public void add(Item item) {
+		item.add(item);
+	}
+	
+//	public void list() {
+//		for(CD cd :listCD) {
+//			cd.print();
+//		}
+//		for(DVD dvd: listDVD) {
+//			dvd.print();
+//		}
+//	}
+	
+	public void list() {
+		for(Item item : )
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("test");
+		Database db = new Database();
+		
+		db.add(new CD("abcdefg","abc", 4, 60, "..."));
+		db.add(new CD("ffsdfsdf", "efg", 5, 60, "..."));
+		db.add(new DVD("sd", "Lifeng", 5, "..."));
+		
+		db.list();
+		
+	}
+
+}

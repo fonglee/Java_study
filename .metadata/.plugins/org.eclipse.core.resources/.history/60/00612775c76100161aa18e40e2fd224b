@@ -1,0 +1,10 @@
+package cdtest;
+
+public class DVD {
+	private String title;
+	private String director;
+	private int numofTracks;
+	private int playingTime;
+	private boolean gotIt = false;
+	private String comment;
+}

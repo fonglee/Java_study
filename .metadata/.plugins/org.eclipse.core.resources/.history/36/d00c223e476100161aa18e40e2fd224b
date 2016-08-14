@@ -1,0 +1,32 @@
+
+public class VendingMachine {
+	int price;
+	int balance;
+	int total;
+	
+	void showBalance()
+	{
+		System.out.prinln(balance);
+		
+	}
+	
+	void showProm()
+	{
+		System.out.println("Welcome");
+	}
+	
+	void insertMoney(double money)
+	{
+		balance += money;
+	}
+	
+	void getFood(double price)
+	{
+		
+	}
+	public static void main(String[] args) {
+		
+
+	}
+
+}

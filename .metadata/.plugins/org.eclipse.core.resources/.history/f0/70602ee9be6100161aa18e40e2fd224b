@@ -1,0 +1,16 @@
+package coins;
+
+public class Coins {
+	private HashMap<Integer, String> coinnames = new HashMap<Integer, String>();
+	
+	
+	public String getName(int amount) {
+		return "";
+	}
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

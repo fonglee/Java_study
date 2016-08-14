@@ -1,0 +1,12 @@
+package domo;
+
+public class CD {
+	private String title;
+	private String artist;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

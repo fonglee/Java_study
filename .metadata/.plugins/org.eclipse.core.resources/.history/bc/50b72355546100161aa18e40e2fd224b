@@ -1,0 +1,11 @@
+package clock;
+
+public class Clock {
+	private Display hour = new Displyy(24);
+	pirvate Display minute new Display(60);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

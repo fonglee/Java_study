@@ -1,0 +1,16 @@
+package domo;
+
+public class CD {
+	private String title;
+	private String artist;
+	private int numofTracks;
+	private int playingTime;
+	private boolena gotIt;
+	private String comment;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

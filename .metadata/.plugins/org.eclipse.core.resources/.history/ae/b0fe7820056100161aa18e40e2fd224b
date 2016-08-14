@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+
+public class ArrayTest {
+	
+	public static double getAva() {
+		int [] numbers = new int[100];
+		int cnt = 0;
+		double sum = 0;
+		int x = 0;
+		double ave = 0.0;
+		
+		Scanner in = new Scanner(System.in);
+		x = in.nextInt();
+		while(x != -1) {
+			sum += x;
+			x = in.nextInt();
+			cnt++;
+		}
+		if(cnt != 0) {
+			ave = sum / cnt;
+		}
+					
+		return ave;	
+	}
+	
+}
