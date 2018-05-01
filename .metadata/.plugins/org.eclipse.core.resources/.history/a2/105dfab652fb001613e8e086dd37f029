@@ -1,0 +1,25 @@
+package ×Ö·û´®·Ö¸ô;
+
+import java.util.Scanner;
+
+/**
+ * 
+ * @author xuanfeng
+ *
+ */
+public class Main {
+    public static void main(String[] args) {
+       
+    	Scanner myScanner = new Scanner(System.in);
+    	
+    	
+    	
+    	
+       
+       
+    }
+
+    private static void stringSplit(StringBuilder builder, String str) {
+
+    }
+}

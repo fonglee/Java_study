@@ -1,0 +1,17 @@
+package “Ï≥£;
+
+import java.io.EOFException;
+
+public class TestException {
+
+	public static void main(String[] args) throws EOFException {
+		// TODO Auto-generated method stub
+		Test test = new Test();
+		
+		test.test();
+		
+	}
+	
+
+
+}

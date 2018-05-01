@@ -1,0 +1,27 @@
+package “Ï≥£;
+
+import java.io.EOFException;
+
+public class TestException {
+
+	public static void main(String[] args){
+		// TODO Auto-generated method stub
+		Test test = new Test();
+		
+		try 
+		{
+			test.test();
+		}
+		catch (Exception e)
+		{
+			System.out.println("Exception occur");
+			
+		}
+		
+		System.out.println("test run over");
+		
+	}
+	
+
+
+}

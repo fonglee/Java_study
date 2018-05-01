@@ -1,0 +1,46 @@
+package 慕课Java;
+
+import java.util.Arrays;
+
+//小伙伴们，请根据所学知识，编写一个 JAVA 程序，实现输出考试成绩的前三名
+//
+//要求：
+//
+//1、 考试成绩已保存在数组 scores 中，数组元素依次为 89 , -23 , 64 , 91 , 119 , 52 , 73
+//
+//2、 要求通过自定义方法来实现成绩排名并输出操作，将成绩数组作为参数传入
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		
+		int [] scores = {89 , -23 , 64 , 91 , 119 , 52 , 73};
+		new HelloWorld.getThreeHeadScores(scores);
+	}
+	
+	//定义方法完成成绩排序并输出前三名的功能
+	private static void getThreeHeadScores(int [] scores)
+	{
+		int effectScoreCount = 0;
+		
+		Arrays.sort(scores);
+		
+		for(int i = scores.length - 1; i >= 0; i--)
+		{
+			if(scores[i] >= 0 && scores[i] <= 100)
+			{
+				
+				if(effectScoreCount >= 3)
+				{
+					return ;
+				}
+				effectScoreCount++;
+				System.out.println(scores[i]);				
+			}
+			
+		}
+		
+		
+	}
+
+}

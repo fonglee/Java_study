@@ -1,0 +1,44 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		
+		treeMapTest();
+		
+		hashMapTest();
+		
+
+	}
+
+
+	private static void hashMapTest() {
+		Map<String, String> myHashMap = new HashMap<String, String>();
+		
+		myHashMap.put("3", "huawei");
+		myHashMap.put("2", "excellent");
+		System.out.println(myHashMap);
+		
+	}
+
+	private static void treeMapTest() {
+		Map<String, String> myTreeMap = new TreeMap<String, String>();
+		
+		myTreeMap.put("1", "lifeng");
+		myTreeMap.put("0", "Wangwu");
+		
+		System.out.println(myTreeMap);
+		
+		for(Map.Entry<String, String> entry : myTreeMap.entrySet())
+		{
+			System.out.println("key is " + entry.getKey() + " value is " + entry.getValue());
+		}
+		
+	}
+	
+	
+
+}

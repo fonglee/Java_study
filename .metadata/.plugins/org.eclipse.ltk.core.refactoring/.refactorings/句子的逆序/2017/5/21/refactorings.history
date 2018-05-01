@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Convert local variable &apos;句子的逆序.Main.main().myScanner&apos; in &apos;句子的逆序.Main.main()&apos; to field&#x0D;&#x0A;- Original project: &apos;句子的逆序&apos;&#x0D;&#x0A;- Original element: &apos;句子的逆序.Main.main().myScanner&apos;&#x0D;&#x0A;- Field name: &apos;myScanner&apos;&#x0D;&#x0A;- Initialize field in method&#x0D;&#x0A;- Declared visibility: &apos;private&apos;&#x0D;&#x0A;- Declare field &apos;static&apos;" description="Convert local variable &apos;myScanner&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src&lt;句子的逆序{Main.java" name="myScanner" selection="282 34" stamp="1495629499421" static="true" version="1.0" visibility="2"/>
+</session>

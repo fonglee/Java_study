@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package 拓扑结构相同子树;
+
+/**
+ * @author xuanfeng
+ *
+ */
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+
+	}
+	
+	public class TreeNode {
+		int val = 0;
+		TreeNode left = null;
+		TreeNOde right = null;
+		public TreeNode(int val) {
+			this.val = val;
+		}
+	}
+
+}

@@ -1,0 +1,20 @@
+package “Ï≥£;
+
+import java.io.EOFException;
+
+public class Test {
+	
+	
+	void test() throws EOFException
+	{
+		
+		testThrowException();
+	}
+	
+	void testThrowException() throws EOFException
+	{
+		throw new EOFException();
+		
+	}
+	
+}

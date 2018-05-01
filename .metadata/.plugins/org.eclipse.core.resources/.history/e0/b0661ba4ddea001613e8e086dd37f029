@@ -1,0 +1,31 @@
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		hashSetTest();
+		
+		treeSetTest();
+
+	}
+
+	private static void hashSetTest() {
+		Set<String> myHashSet = new HashSet<String>();
+		
+		myHashSet.add("1");
+		myHashSet.add("0");
+		
+		System.out.println(myHashSet);
+		
+		Iterator<String> iter = myHashSet.iterator();
+		while(iter.hasNext())
+		{
+			System.out.println(iter.next());
+		}
+				
+	}
+
+}

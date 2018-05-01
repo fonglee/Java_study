@@ -1,0 +1,139 @@
+/**
+ * 
+ */
+package 拓扑结构相同子树;
+
+/**
+ * @author xuanfeng
+ *
+ */
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+
+	}
+	
+	public class TreeNode {
+		int val = 0;
+		TreeNode left = null;
+		TreeNode right = null;
+		public TreeNode(int val) {
+			this.val = val;
+		}
+	}
+	
+	/**
+	 * 对于两棵彼此独立的二叉树A和B，请编写一个高效算法，检查A中是否存在一棵子树与B树的拓扑结构完全相同。
+
+	 * 给定两棵二叉树的头结点A和B，请返回一个bool值，代表A中是否存在一棵同构于B的子树。
+	 * @param A
+	 * @param B
+	 * @return
+	 */
+	public boolean chkIdentical(TreeNode A, TreeNode B) {
+		String strA = "";
+		traverse(A, strA);
+		
+		String strB = "";
+		traverse(B, strB);
+		
+		if(strA.contains(strB)) {
+			return true;			
+		} 
+	
+		return false;
+    }
+	
+	public void traverse(TreeNode node, String str) {
+		if(null != node) {
+			str += String.valueOf(node.val) + '#';
+		}
+		else {
+			return;
+		}
+			
+		
+		traverse(node.left, str);
+		traverse(node.right, str);
+	}
+	
+	
+	/**
+	 * 对于两个字符串A和B，如果A和B中出现的字符种类相同且每种字符出现的次数相同，则A和B互为变形词，请设计一个高效算法，检查两给定串是否互为变形词。
+
+	 * 给定两个字符串A和B及他们的长度，请返回一个bool值，代表他们是否互为变形词。
+
+	 * 测试样例：
+	 * "abc",3,"bca",3
+	 * 返回：true
+	 * @author xuanfeng
+	 *
+	 */
+	public class Transform {
+	    public boolean chkTransform(String A, int lena, String B, int lenb) {
+			if(null == A || null == B || lena != lenb) {
+				return false;
+			}
+	    	
+			int [] map = new int[256];
+	    	char [] arrayA = A.toCharArray();
+	    	char [] arrayB = B.toCharArray();
+	    	
+	    	for (int i = 0; i < arrayA.length; i++) {
+	    		map[arrayA[i]]++;
+	    	}
+	    	
+	    	for (int j = 0; j < arrayB.length; j++) {
+	    		if(map[arrayB[j]]-- == 0) {
+	    			return false;
+	    		}
+	    	}
+			
+	    	
+	    	return true;
+	        
+	    }
+	}
+	
+	/**
+	 * 如果对于一个字符串A，将A的前面任意一部分挪到后边去形成的字符串称为A的旋转词。比如A="12345",A的旋转词有"12345","23451","34512","45123"和"51234"。对于两个字符串A和B，请判断A和B是否互为旋转词。
+
+	* 给定两个字符串A和B及他们的长度lena，lenb，请返回一个bool值，代表他们是否互为旋转词。
+
+	* 测试样例：
+	* "cdab",4,"abcd",4
+	* 返回：true
+	 */
+	 public boolean chkRotation(String A, int lena, String B, int lenb) {
+	        if (lena != lenb) 
+	        {
+	        	return false;
+	        }
+	        
+	        String myStr = A + A;
+	        
+	        if(myStr.contains(B)) 
+	        {
+	        	return true;
+	        }
+	        
+	        return false;
+	    }
+	 
+	 /**
+	  * 对于一个字符串，请设计一个算法，只在字符串的单词间做逆序调整，也就是说，字符串由一些由空格分隔的部分组成，你需要将这些部分逆序。
+	  * 给定一个原字符串A和他的长度，请返回逆序后的字符串。
+	  * @param A
+	  * @param n
+	  * @return
+	  */
+	 public String reverseSentence(String A, int n) {
+	        // write code here
+	    }
+	}
+}
+

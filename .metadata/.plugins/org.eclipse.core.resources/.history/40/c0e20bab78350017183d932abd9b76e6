@@ -1,0 +1,42 @@
+/**
+ * 
+ */
+package 拓扑结构相同子树;
+
+/**
+ * @author xuanfeng
+ *
+ */
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+
+	}
+	
+	public class TreeNode {
+		int val = 0;
+		TreeNode left = null;
+		TreeNode right = null;
+		public TreeNode(int val) {
+			this.val = val;
+		}
+	}
+	
+	public boolean chkIdentical(TreeNode A, TreeNode B) {
+		
+		
+		return false;
+        
+    }
+	
+	public void traverse(TreeNode node, String str) {
+		if(null != node) {
+			str = str + String.valueOf(node->val);
+		}
+	}
+
+}

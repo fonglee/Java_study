@@ -1,0 +1,108 @@
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		hashSetTest();
+		
+		treeSetTest();
+		
+		sortedTreeSetTest();
+		
+
+	}
+
+	private static void sortedTreeSetTest() {
+		
+		
+	}
+	
+	public class Item implements Comparable<Item>
+	{
+		private int partNumber;
+		private String description;
+		
+		public Item(int partNumber, String description)
+		{
+			this.setPartNumber(partNumber);
+			this.setDescription(description);
+		}
+		
+		public int compareTo(Item other)
+		{
+			return Integer.compare(this.partNumber, other.partNumber)
+		}
+
+		/**
+		 * @return the partNumber
+		 */
+		public int getPartNumber() {
+			return partNumber;
+		}
+
+		/**
+		 * @param partNumber the partNumber to set
+		 */
+		public void setPartNumber(int partNumber) {
+			this.partNumber = partNumber;
+		}
+
+		/**
+		 * @return the description
+		 */
+		public String getDescription() {
+			return description;
+		}
+
+		/**
+		 * @param description the description to set
+		 */
+		public void setDescription(String description) {
+			this.description = description;
+		}
+		
+		
+	}
+
+	private static void treeSetTest() {
+		SortedSet<String> myTreeSet = new TreeSet<String>();
+		
+		myTreeSet.add("3");
+		myTreeSet.add("2");
+		
+		Iterator<String> iter = myTreeSet.iterator();
+		while(iter.hasNext())
+		{
+			System.out.println(iter.next());
+		}
+		
+		for(String str: myTreeSet)
+		{
+			
+			System.out.println(str);
+		}
+		
+	}
+
+	private static void hashSetTest() {
+		Set<String> myHashSet = new HashSet<String>();
+		
+		myHashSet.add("1");
+		myHashSet.add("0");
+		
+		System.out.println(myHashSet);
+		
+		Iterator<String> iter = myHashSet.iterator();
+		while(iter.hasNext())
+		{
+			System.out.println(iter.next());
+		}
+				
+	}
+
+}

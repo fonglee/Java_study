@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;华为OJ&apos; to &apos;求最小公倍数&apos;&#x0D;&#x0A;- Original element: &apos;华为OJ&apos;&#x0D;&#x0A;- Renamed element: &apos;华为OJ&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;华为OJ&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=华为OJ" name="求最小公倍数" references="true" stamp="1472394639993" version="1.0"/>
+</session>

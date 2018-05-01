@@ -1,0 +1,93 @@
+package 句子的逆序;
+
+/**
+对于一个字符串，请设计一个算法，只在字符串的单词间做逆序调整，也就是说，字符串由一些由空格分隔的部分组成，你需要将这些部分逆序。
+
+给定一个原字符串A和他的长度，请返回逆序后的字符串。
+
+测试样例：
+"dog loves pig",13
+返回："pig loves dog"
+
+**/
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner myScanner = new Scanner(System.in;
+		
+		
+		
+		
+
+	}
+	
+	public String reverseSentence(String A, int n) {
+		
+		char [] str = A.toCharArray();
+		
+		reverseSentenceArray(str, n);
+		
+		int start = 0;
+		int end = 0;
+		
+		while(start >= n)
+		{
+			while(str[end] != ' ' && end <= n - 1)
+			{
+				end++;
+			}
+			
+			reverseWord(str, start, end-1);
+			
+			while(str[end] == ' ' && end <= n - 1)
+			{
+				end++;
+			}
+			
+			start = end + 1;
+			
+			
+			
+			
+			
+		}
+		return A;
+        
+    }
+	
+	public String reverseSentenceArray(char [] str, int len) {
+		
+		for(int i = 0; i < len / 2 - 1; i++)
+		{
+			char tmp = str[i];
+			str[i] = str[len-1-i];
+			str[len-1-i] = tmp;
+		}
+		
+		
+		
+		return null;
+		
+	}
+	
+	public String reverseWord(char [] str, int start, int end) {
+		
+		int middle = (start + end)/ 2;
+		
+		for(int i = start; i <= middle; i++)
+		{
+			char tmp = str[i];
+			str[i] = str[end - start - i ];
+			str[end-start-i] = tmp;
+			
+		}
+		
+		
+		
+		return null;
+	
+		
+	}
+
+}

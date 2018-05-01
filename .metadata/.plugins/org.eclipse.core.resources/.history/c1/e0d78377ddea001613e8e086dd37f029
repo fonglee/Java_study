@@ -1,0 +1,24 @@
+import java.util.HashSet;
+import java.util.Set;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		hashSetTest();
+		
+
+	}
+
+	private static void hashSetTest() {
+		Set<String> myHashSet = new HashSet<String>();
+		
+		myHashSet.add("1");
+		myHashSet.add("0");
+		
+		System.out.println(myHashSet);
+		
+		
+	}
+
+}
