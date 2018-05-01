@@ -1,5 +1,5 @@
-#This is a record of Java study
-
+# This is a record of Java study
+---
 ## Shapes
 It is a test of drawing different shapes using object.
 ## notebook
